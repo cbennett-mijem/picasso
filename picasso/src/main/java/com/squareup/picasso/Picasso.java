@@ -687,6 +687,10 @@ public class Picasso {
     return singleton;
   }
 
+  public static Picasso with(Context context) {
+    return get();
+  }
+
   /**
    * Set the global instance returned from {@link #get}.
    * <p>
